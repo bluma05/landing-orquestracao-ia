@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentação Orquestração de Agentes de IA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/lucide-icons/lucide@latest/icons/book.svg">
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>Conteúdo</h2>
+    <nav>
+      <a href="#intro">Introdução</a>
+      <a href="#identidade">Identidade dos Agentes</a>
+      <a href="#tecnicas">Técnicas e Padrões</a>
+      <a href="#seguranca">Segurança e Boas Práticas</a>
+      <a href="#orquestracao">Orquestração e Modularidade</a>
+      <a href="#avancadas">Técnicas Avançadas</a>
+      <a href="#interoperabilidade">Interoperabilidade</a>
+      <a href="#recomendacoes">Recomendações</a>
+      <a href="#conclusao">Conclusão</a>
+    </nav>
+  </aside>
+  <main class="content">
+    <header>
+      <h1>Documentação: Núcleo de Orquestração de Agentes de IA</h1>
+      <p class="subtitle">Aula Especial – Arquitetura, Técnicas e Boas Práticas</p>
+    </header>
+    <section id="intro">
+      <h2>Introdução</h2>
+      <p>Bem-vindo à documentação didática sobre orquestração de agentes de IA. Aqui você encontrará conceitos essenciais, técnicas, exemplos e recomendações para construir sistemas multiagente robustos, seguros e escaláveis, com visual e linguagem pensados para ensino e fácil assimilação.</p>
+    </section>
+    <section id="identidade">
+      <h2>1. Identidade e Filosofia dos Agentes</h2>
+      <p>Cada agente é projetado com uma identidade clara, propósito definido e princípios operacionais. Exemplos: Devin, Lovable, Dia, Bolt, Roo, Cline, Trae, v0, Manus, Same.dev, Replit. Todos colaboram com o usuário, priorizando clareza, segurança, eficiência e autonomia, mas cada um tem nuances próprias de permissividade e comunicação.</p>
+    </section>
+    <section id="tecnicas">
+      <h2>2. Técnicas e Padrões de Interação</h2>
+      <p>Os agentes utilizam iteração passo-a-passo, raciocínio sequencial e uso criterioso de ferramentas. O fluxo típico: análise do pedido, decomposição em etapas, uso de ferramentas para leitura, edição, execução e verificação, e comunicação estruturada dos resultados. O raciocínio explícito (<code>&lt;sequential-thinking&gt;</code>, <code>&lt;plan&gt;</code>, etc.) garante rastreabilidade e transparência.</p>
+      <div class="highlight">
+        <strong>Exemplo de Fluxo:</strong>
+        <ol>
+          <li>Receber tarefa</li>
+          <li>Analisar contexto</li>
+          <li>Planejar etapas</li>
+          <li>Executar ações com ferramentas</li>
+          <li>Verificar resultados</li>
+          <li>Comunicar e registrar</li>
+        </ol>
+      </div>
+    </section>
+    <section id="seguranca">
+      <h2>3. Segurança, Restrições e Boas Práticas</h2>
+      <p>Segurança, integridade dos dados e privacidade são prioridades. Restrições explícitas sobre acesso, manipulação de arquivos sensíveis, comandos destrutivos e exposição de informações confidenciais. Ferramentas são mediadas por schemas, validação de parâmetros e confirmação do usuário.</p>
+      <div class="highlight warning">
+        <strong>Boas Práticas:</strong>
+        <ul>
+          <li>Nunca modificar arquivos críticos sem permissão</li>
+          <li>Nunca expor segredos</li>
+          <li>Nunca executar ações irreversíveis sem confirmação</li>
+        </ul>
+      </div>
+    </section>
+    <section id="orquestracao">
+      <h2>4. Orquestração, Modularidade e Núcleo Comum</h2>
+      <p>Todos os agentes compartilham um núcleo de orquestração baseado em ciclos de análise, execução, verificação e iteração. Modularidade é garantida pela separação entre lógica de decisão, execução de ferramentas e formatação de respostas. Modos distintos permitem alternância entre planejamento, execução e revisão.</p>
+    </section>
+    <section id="avancadas">
+      <h2>5. Técnicas Avançadas e Diferenciais</h2>
+      <ul>
+        <li>Raciocínio sequencial explícito para decisões críticas</li>
+        <li>Uso de schemas XML/JSON para tool calls</li>
+        <li>Workflows multiagente e colaboração</li>
+        <li>Fallback, recuperação de falhas e versionamento</li>
+        <li>Integração com sistemas externos (Notion, GitHub, etc.)</li>
+        <li>Adaptação dinâmica de linguagem e formato</li>
+        <li>Geração automática de documentação e diagramas</li>
+      </ul>
+    </section>
+    <section id="interoperabilidade">
+      <h2>6. Conexões, Interoperabilidade e Núcleo de Orquestração</h2>
+      <p>Interoperabilidade é viabilizada por padrões comuns de tool calls, schemas de resposta e protocolos de comunicação. O núcleo de orquestração pode atuar como dispatcher inteligente, roteando tarefas para o agente mais adequado conforme contexto e especialidade.</p>
+    </section>
+    <section id="recomendacoes">
+      <h2>7. Recomendações para Evolução e Governança</h2>
+      <ul>
+        <li>Padronizar schemas de tool calls e respostas</li>
+        <li>Reforçar logs e versionamento</li>
+        <li>Documentar fluxos de decisão e fallback</li>
+        <li>Promover modularidade e desacoplamento</li>
+        <li>Testes automatizados para fluxos críticos</li>
+        <li>Auditoria periódica de permissões e políticas</li>
+      </ul>
+    </section>
+    <section id="conclusao">
+      <h2>8. Conclusão</h2>
+      <p>O núcleo de orquestração é central para robustez, escalabilidade e governança, permitindo integração harmoniosa de múltiplos agentes, cada um com suas especialidades e técnicas. Esta documentação serve como referência estratégica para evolução e integração de sistemas de IA multiagente.</p>
+    </section>
+    <footer>
+      <p>Desenvolvido por BluMA • 2025</p>
+    </footer>
+  </main>
+</body>
+</html>
